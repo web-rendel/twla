@@ -13,11 +13,293 @@ html(lang='ru', class="no-js")
     link(href="css/style.css", rel="stylesheet")
     link(href="css/main.css", rel="stylesheet")
     link(href="css/fonts.css", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro", rel="stylesheet")
   body
-    .container
+    .header
+      .container
+        .row
+          .col-md-3.col-sm-3.col-xs-12
+            .logo-header
+              a(href="/")
+                img(src="img/logo-header.png", alt="Logo")
+            a(href="#", class="toggle-mnu hidden-lg hidden-md hidden-sm")
+              span
+          .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-1.col-xs-12
+            .wraper-menu-mobile
+              .nav-menu
+                ul
+                  li.active
+                    a(href="#") Home
+                  li
+                    a(href="#") Work
+                  li
+                    a(href="#") Blog
+                  li
+                    a(href="#") Contact
+              .social-network
+                a(href="#")
+                  i.fa.fa-twitter
+                a(href="#")
+                  i.fa.fa-facebook
+                a(href="#")
+                  i.fa.fa-dribbble
+    //- slider
+    .container-fluid
       .row
-        .col-md-12
-          h1.text-center Start-template
+        .wraper-slider
+          .single-item
+            div
+              img(src="img/slider-img/slider-img-1.png", alt="")
+              .slider-content
+                h2 Lorem ipsum dolor sit amet. 1
+                p At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                .slide-button
+                  a(href="#") More Information
+            div
+              //- img(src="img/slider-img/slider-img-1.png", alt="")
+              video(loop, autoplay="yes" class="video")
+                source(src="img/video/Hello-World.mp4", type="video/mp4")
+              .slider-content
+                h2 Lorem ipsum dolor sit amet. 2
+                p At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                .slide-button
+                  a(href="#") More Information
+            div
+              img(src="img/slider-img/slider-img-1.png", alt="")
+              .slider-content
+                h2 Lorem ipsum dolor sit amet. 3
+                p At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                .slide-button
+                  a(href="#") More Information
+    //- Description
+    section.description
+      .container
+        .row
+          .col-md-12
+            h2 Lorem ipsum dolor sit amet.
+            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            .center-img
+              img(src="img/laptop.png", alt="laptop")
+    //- Gadgets
+    section.gadgets
+      .container
+        .row
+          .gadgets-title
+            h2 Gadgets
+          .col-md-4.col-sm-4
+            .gadgets-item
+              .gadgets-icon
+                span
+                  i.fa.fa-cog
+              .gadgets-description
+                h3 Features
+                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+                a(href="") See all features
+          .col-md-4.col-sm-4
+            .gadgets-item
+              .gadgets-icon
+                span
+                  i.fa.fa-user
+              .gadgets-description
+                h3 Support
+                p At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                a(href="") Have some questions?
+          .col-md-4.col-sm-4
+            .gadgets-item
+              .gadgets-icon
+                span
+                  i.fa.fa-check
+              .gadgets-description
+                h3 Pixel perfect
+                p At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                a(href="") Really?
+    //-  last-projects
+    section.last-projects
+      .container
+        .row
+          .col-md-12
+            .last-projects-title
+              h2 Last Projects
+              p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          .col-md-6.col-sm-6
+            .projects-item
+              .center-img
+                img(src="img/projects-1.png", alt="projects-1")
+          .col-md-6.col-sm-6
+            .projects-item
+              .center-img
+                img(src="img/projects-2.png", alt="projects-2")
+        .row
+          .wraper-button.clearfix
+            button Load more
+              i.fa.fa-repeat
+    //- last-blogposts
+    section.last-blogposts
+      .container
+        .row
+          .col-md-3.col-sm-3
+            .blogposts-title
+              h2 The Last Blogposts
+          .col-md-3.col-sm-3
+            .blogposts-item
+              h3 Design
+              p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor...
+              span Today
+          .col-md-3.col-sm-3
+            .blogposts-item
+              h3 Apple
+              p At vero eos et accusam et justo duo dolores et ea rebum....
+              span December 11, 2012
+          .col-md-3.col-sm-3
+            .blogposts-item
+              h3 Social
+              p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy...
+              span December 10, 2012
+    //- logo-company
+    section.logo-company
+      .container
+        .row
+          .col-md-3.col-sm-3
+            .logo-company-item
+              a(href="#logo-company-1", class="popup-with-logo-company")
+                img(src="img/company/envato.png", alt="envato")
+            .wraper-popap-company
+              div(id="logo-company-1", class="maghific-form-popap", _lpchecked="1")
+                button(title="Close (Esc)", type="button", class="mfp-close") x
+                .center-img
+                  img(src="img/company/envato.png", alt="envato")
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa fugiat, inventore sunt distinctio consequuntur cumque quibusdam magnam non accusantium dicta nostrum? Unde, error, temporibus! Suscipit voluptate maxime magni quisquam.
+          .col-md-3.col-sm-3
+            .logo-company-item
+              a(href="#logo-company-2", class="popup-with-logo-company")
+                img(src="img/company/ebay.png", alt="ebay")
+            .wraper-popap-company
+                div(id="logo-company-2", class="maghific-form-popap", _lpchecked="1")
+                  button(title="Close (Esc)", type="button", class="mfp-close") x
+                  .center-img
+                    img(src="img/company/ebay.png", alt="ebay")
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa fugiat, inventore sunt distinctio consequuntur cumque quibusdam magnam non accusantium dicta nostrum? Unde, error, temporibus! Suscipit voluptate maxime magni quisquam.
+          .col-md-3.col-sm-3
+            .logo-company-item
+              a(href="#logo-company-3", class="popup-with-logo-company")
+                img(src="img/company/smashing.png", alt="smashing")
+            .wraper-popap-company
+                div(id="logo-company-3", class="maghific-form-popap", _lpchecked="1")
+                  button(title="Close (Esc)", type="button", class="mfp-close") x
+                  .center-img
+                    img(src="img/company/smashing.png", alt="smashing")
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa fugiat, inventore sunt distinctio consequuntur cumque quibusdam magnam non accusantium dicta nostrum? Unde, error, temporibus! Suscipit voluptate maxime magni quisquam.
+          .col-md-3.col-sm-3
+            .logo-company-item
+              a(href="#logo-company-4", class="popup-with-logo-company")
+                img(src="img/company/pinterest.png", alt="pinterest")
+            .wraper-popap-company
+                div(id="logo-company-4", class="maghific-form-popap", _lpchecked="1")
+                  button(title="Close (Esc)", type="button", class="mfp-close") x
+                  .center-img
+                    img(src="img/company/pinterest.png", alt="pinterest")
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa fugiat, inventore sunt distinctio consequuntur cumque quibusdam magnam non accusantium dicta nostrum? Unde, error, temporibus! Suscipit voluptate maxime magni quisquam.
+          .col-md-3.col-sm-3
+            .logo-company-item
+              a(href="#logo-company-5", class="popup-with-logo-company")
+                img(src="img/company/nike.png", alt="nike")
+            .wraper-popap-company
+                div(id="logo-company-5", class="maghific-form-popap", _lpchecked="1")
+                  button(title="Close (Esc)", type="button", class="mfp-close") x
+                  .center-img
+                    img(src="img/company/nike.png", alt="nike")
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa fugiat, inventore sunt distinctio consequuntur cumque quibusdam magnam non accusantium dicta nostrum? Unde, error, temporibus! Suscipit voluptate maxime magni quisquam.
+          .col-md-3.col-sm-3
+            .logo-company-item
+              a(href="#logo-company-6", class="popup-with-logo-company")
+                img(src="img/company/dribbble.png", alt="dribbble")
+            .wraper-popap-company
+                div(id="logo-company-6", class="maghific-form-popap", _lpchecked="1")
+                  button(title="Close (Esc)", type="button", class="mfp-close") x
+                  .center-img
+                    img(src="img/company/dribbble.png", alt="dribbble")
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa fugiat, inventore sunt distinctio consequuntur cumque quibusdam magnam non accusantium dicta nostrum? Unde, error, temporibus! Suscipit voluptate maxime magni quisquam.
+          .col-md-3.col-sm-3
+            .logo-company-item
+              a(href="#logo-company-7", class="popup-with-logo-company")
+                img(src="img/company/twitter.png", alt="twitter")
+            .wraper-popap-company
+                div(id="logo-company-7", class="maghific-form-popap", _lpchecked="1")
+                  button(title="Close (Esc)", type="button", class="mfp-close") x
+                  .center-img
+                    img(src="img/company/twitter.png", alt="twitter")
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa fugiat, inventore sunt distinctio consequuntur cumque quibusdam magnam non accusantium dicta nostrum? Unde, error, temporibus! Suscipit voluptate maxime magni quisquam.
+          .col-md-3.col-sm-3
+            .company-contact-us
+              a(href="#logo-company-8", class="popup-with-logo-company")
+                button Contact us
+                  img(src="img/add-icon.png", alt="")
+            .wraper-popap-company
+              div(id="logo-company-8", class="maghific-form-popap", _lpchecked="1")
+                h3 Feedback form
+                form
+                  input(type="text", name="name", placeholder="Name")
+                  input(type="email", name="email", placeholder="Email")
+                  input(type="phone", name="phone", placeholder="Phone")
+                  button(type="button", class="send") Send
+    section.testimonials
+      .container
+        .row
+          .col-md-10.col-md-offset-1
+            .wraper-testimonials
+              div
+                h3 Testimonials
+                p „ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. “
+              div
+                h3 Testimonials
+                p „ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. “
+              div
+                h3 Testimonials
+                p „ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. “
+    
+    footer.footer
+      .container
+        .row
+          .col-md-3.col-sm-3
+            .footer-logo
+              img(src="img/logo-footer.png", alt="logo footer")
+          .col-md-3.col-sm-3
+            .twitter-widget
+              h3 Twitter Widget
+              .twitter-widget-item
+                p
+                  a(href="#") @gonedesign 
+                  |Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam...
+                span 2 days ago
+              .twitter-widget-item
+                p
+                  a(href="#") @themeforest 
+                  |At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd...
+                span 3 days ago
+          .col-md-3.col-sm-3
+            .sitemap
+              h3 Sitemap
+              ul
+                li
+                  a(href="/") Home
+                li
+                  a(href="#") Work
+                li
+                  a(href="#") Blog
+                li
+                  a(href="#") Contact
+          .col-md-3.col-sm-3
+            .flickr
+              h3 Flickr
+              .flickr-block
+                img(src="img/flickr/flickr-1.png", alt="flickr-1")
+                img(src="img/flickr/flickr-2.png", alt="flickr-2")
+                img(src="img/flickr/flickr-3.png", alt="flickr-3")
+                img(src="img/flickr/flickr-4.png", alt="flickr-4")
+                img(src="img/flickr/flickr-5.png", alt="flickr-5")
+                img(src="img/flickr/flickr-6.png", alt="flickr-6")
+            
 
 script(src="js/scripts.js")
 script(src="js/common.js")

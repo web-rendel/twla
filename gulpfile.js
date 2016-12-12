@@ -32,11 +32,15 @@ var gulp = require('gulp'),
     css: [
       './src/libs/bootstrap/bootstrap.css',
       './bower_components/animate.css/animate.min.css',
-      './src/libs/font-awesome/css/font-awesome.css'
+      './src/libs/font-awesome/css/font-awesome.css',
+      './src/libs/slick-slider/slick.css',
+      './src/libs/magnific-popup/magnific-popup.css'
     ],
     js: [
       './bower_components/jquery/dist/jquery.min.js',
       './src/libs/modernizr/modernizr.js',
+      './src/libs/slick-slider/slick.min.js',
+      './src/libs/magnific-popup/jquery.magnific-popup.js',
       './bower_components/respond/dest/respond.min.js'
     ]
   }
